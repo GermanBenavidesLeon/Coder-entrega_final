@@ -1,0 +1,52 @@
+.Best{
+    background-color: $esloganyotros;
+    font-family: $textos;
+    font-size: 20pt;
+    padding: 20px 0px;
+    margin: 100px 10px 15px 10px;
+    border-radius: 8px;   
+    text-align: center;
+    font-weight: bold;
+
+    .Best p{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+  
+    }
+}
+
+.section_article--subtvideo{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 20px 0px;
+    margin: 100px 10px 15px 10px;
+    border-radius: 8px;
+
+    h3{
+        background-color: $esloganyotros;
+        padding: 10px 10px;
+        margin: 10px 300px;
+        border-radius: 8px;
+        font-weight: bold;
+
+        @media (max-width: 768px){
+            text-align: center;
+            padding: 5px 5px;
+            margin: 5px 150px;
+        }
+    
+        @media (max-width: 412px){
+            text-align: center;
+            padding: 3px 3px;
+            margin: 2px 75px;
+        }
+    }
+    
+    iframe{
+        border-radius: 8px;
+    }
+}
+

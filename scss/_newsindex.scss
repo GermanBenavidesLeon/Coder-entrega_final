@@ -1,0 +1,21 @@
+.SectionNews{
+    background-color: $headercolor;
+    font-family: $titulos;
+    opacity: 90%;
+
+    h3{
+        margin: 5px 0px;
+        color: $colorbikeytextos;
+    }
+
+    h4{
+        margin: 5px 0px;
+        color: $colorbikeytextos;
+    }
+    p{
+        text-align: justify;
+        font-size: 17px;
+        margin-top: 10px;
+        color: $colorbikeytextos;
+    }
+}

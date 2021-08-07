@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+
+}
+
+body{
+    background-image: url(../Multimedia/Levo_Gallery_4-min.jpg);
+    
+}
+
+$titulos: roboto;
+$textos: arial;
+
+$headercolor: #2c2c2c;
+$esloganyotros: rgba(225, 243, 67, 0.932);
+$colorbikeytextos: rgba(234, 247, 247, 0.979);
+$colortexto: black;
+
+$altyanchocolum: 1000px;
+
+$team: grey;
+
+$miscolors:(
+    "primario": #2c2c2c,
+    "secundario": rgba(225, 243, 67, 0.932),
+    "terciario": rgb(161, 161, 161),
+);
+
+@each $colortexto in $miscolors {
+    .#{colortexto} {
+        background-color: $colortexto;
+    } 
+        
+}
+
+@each $team in mtb, ruta, bmx, electricas {
+    .#{$team}-imagen {
+        background-image: url("#{$team}.jpg");
+    }    
+}
+
+
+@for $i from 2 through 6 {
+
+    h#{$i} {
+    font-family: $titulos;
+    }
+}
+
+@mixin parrafos{
+    font-family: $textos;
+    font-size: 15pt;
+    line-height: 1.8;
+}
+
+@mixin h1propiedades {
+    color: $colorbikeytextos;
+    font-family: $titulos;
+    opacity: none;
+}
+
+
+h1{
+    @include h1propiedades;            
+}
+
+p{
+   @include parrafos;
+   @if ($colortexto == black) {
+       color: black;
+    }   @else if ($colortexto == $headercolor) {
+        color: $colorbikeytextos;
+    }   @else {
+        color: black;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.MenuTrans{
+    transition: all 1s;
+}
+
+.MenuTrans:hover{
+    background-color: rgba(225, 243, 67, 0.932);
+}
+
+.EsloganPedal{
+    color: $esloganyotros;
+    font-family: Amatic Sc, cursive;
+    opacity: none;
+}
+
+.FontTour{
+    font-family: 'Kirang Haerang';
+}
+
+.titulo{
+    animation-name: titulomov;
+    animation-duration: 5s;
+}
+
+@keyframes titulomov{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+.titulosPag{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    color: $esloganyotros;
+    background-color: $headercolor;
+    padding: 10px;
+    margin: 20px 400px 50px 400px;
+    opacity: 85%;
+    border-radius: 10px;
+    text-align: center;
+
+    @media (max-width: 768px){
+        animation-duration: 2s;
+        animation-name: aparecer;
+        color: $esloganyotros;
+        background-color: $headercolor;
+        padding: 5px;
+        margin: 10px 200px 30px 200px;
+        opacity: 85%;
+        border-radius: 10px;
+        text-align: center;
+    
+    }
+
+    @media (max-width: 412px){
+        animation-duration: 2s;
+        animation-name: aparecer;
+        color: $esloganyotros;
+        background-color: $headercolor;
+        padding: 3px;
+        margin: 90px 50px 25px 50px;
+        opacity: 85%;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.contactoA {
+    background-color: rgba(48, 48, 47, 0.932);
+    padding: 10px;
+    border-radius: 10px;
+    color: $esloganyotros;
+  }
+
+
+.bikeTitulo{
+    animation-name: biketitulo;
+    animation-duration: 5s;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+}
+
+@keyframes biketitulo{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        transform: rotateY(70deg);
+    }
+    50%{
+        
+        background-color: rgba(129, 129, 123, 0.932);
+    }
+    75%{
+
+    } 
+        
+    100%{
+       opacity: 1; 
+       background-color: rgba(225, 243, 67, 0.932); 
+    }
+}  

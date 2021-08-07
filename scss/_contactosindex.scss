@@ -1,0 +1,104 @@
+.InfoContac{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: $altyanchocolum/2;
+
+    @media (max-width: 768px){
+        grid-template-columns: 1fr;
+        margin: 100px 5px 450px 5px;
+    }
+
+    @media (max-width: 412px){
+        grid-template-columns: 0.5fr;
+        margin: 100px 5px 450px 5px;
+    }
+
+
+    article{
+    background-color: rgb(44, 44, 44);
+    background-image: linear-gradient(to right, rgb(170, 167, 167), rgb(72, 74, 75));
+    opacity: 90%;
+    padding: 30px;
+    margin: 100px 15px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma;
+
+    @media (max-width: 768px){
+        padding: 10px 2px;
+        margin: 5px 2px;
+        width: 100%;
+    }
+
+    @media (max-width: 412px){
+        padding: 10px;
+        margin: 5px 2px;
+        width: 160%;
+    }
+
+    }
+
+    h1{
+    text-align: center;
+    margin-bottom: 10px;
+    }
+
+    div{
+    background-color: rgba(112, 112, 108, 0.932);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    transition: all 1s;
+
+        @media (max-width: 768px){
+            width: 95%;
+        }
+
+        @media (max-width: 412px){
+            width: 100%;
+        }
+
+    }
+
+    div:hover{
+    background-color: $esloganyotros;
+    }
+
+    input{
+    background-color: rgba(217, 218, 216, 0.932);
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+
+        @media (max-width: 768px){
+           width: 70%;
+        }
+
+        @media (max-width: 412px){
+            width: 100%;
+        }
+
+    }
+
+    textarea{
+    border-radius: 10px;
+    padding: 5px;
+    font-family: $textos;
+    margin: 20px 10px 10px 150px;
+    font-size: 18px;
+    color: darkgrey;
+
+        @media (max-width: 768px){
+            width: 60%;
+            height: 50%;
+            margin-left: 50px;
+        }
+
+        @media (max-width: 412px){
+            width: 80%;
+            height: 50%;
+            margin-left: 50px;
+        }
+
+    }
+
+}
