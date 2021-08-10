@@ -13,49 +13,49 @@ footer{
 
     @media (max-width: 1024px){
         flex-direction: column;
-        align-items: center;
+
     }
             
-        a{
-            text-decoration: none;
-            color: $esloganyotros;
-            padding: 10px;
-            border-radius: 10px;
-            font-size: 15pt;
-            font-weight: bold;
+    a{
+        text-decoration: none;
+        color: $esloganyotros;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15pt;
+        font-weight: bold;
 
-                img{
-                    background-color: $esloganyotros;
-                    border-radius: 10px;
-                    padding: 5px;
-                }
+            img{
+                background-color: $esloganyotros;
+                border-radius: 10px;
+                padding: 5px;
+            }
 
+    }
+
+    p{
+        color: $esloganyotros;
+        font-size: 10px;
+    }
+
+    ul{
+        list-style: none;
+        color: $esloganyotros;
+        margin-top: 20px;
+        text-align: center;
+        
+        h3 h4{
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         }
+    }
 
-        p{
-            color: $esloganyotros;
-            font-size: 10px;
-        }
-
-       ul{
-           list-style: none;
-           color: $esloganyotros;
-           margin-top: 20px;
-           text-align: center;
-           
-           h3 h4{
-            font-weight: bold;
-            font-size: 18px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-           }
-       }
-
-        li{
-            font-family: $textos;
-            font-size: 12px;
-            margin-bottom: 10px;
-       }
+    li{
+        font-family: $textos;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
 }
 
 

@@ -203,12 +203,26 @@ header {
     align-items: center;
     height: 230px;
   }
+  header .header_empire {
+    text-align: center;
+    font-size: 14px;
+    justify-self: center;
+    margin-right: 200px;
+    width: 100%;
+  }
 }
-@media (max-width: 412px) {
+@media (max-width: 375px) {
   header {
     flex-direction: column-reverse;
     align-items: center;
-    height: 230px;
+    height: 260px;
+  }
+  header .header_empire {
+    text-align: center;
+    font-size: 10px;
+    justify-self: center;
+    margin-right: 200px;
+    width: 80%;
   }
 }
 header nav {
@@ -250,8 +264,7 @@ header nav li a {
   font-weight: bold;
 }
 header .header_empire {
-  width: 1000px;
-  text-align: center;
+  margin-left: 200px;
 }
 
 .indexMain {
@@ -263,7 +276,7 @@ header .header_empire {
   font-family: roboto;
   padding: 25px;
   display: flex;
-  margin: 150px 0px;
+  margin: 100px 0px;
   align-items: center;
 }
 @media (max-width: 1024px) {
@@ -278,7 +291,7 @@ header .header_empire {
     align-items: center;
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 375px) {
   .indexMain {
     flex-direction: column;
     align-items: center;
@@ -325,7 +338,6 @@ footer {
 @media (max-width: 1024px) {
   footer {
     flex-direction: column;
-    align-items: center;
   }
 }
 footer a {
@@ -391,7 +403,7 @@ footer li {
 .section_article--subtvideo h3, .section_article--subtvideo .h3 {
   background-color: rgba(225, 243, 67, 0.932);
   padding: 10px 10px;
-  margin: 10px 300px;
+  margin: 10px 300px 50px 300px;
   border-radius: 8px;
   font-weight: bold;
 }
@@ -412,6 +424,18 @@ footer li {
 .section_article--subtvideo iframe {
   border-radius: 8px;
 }
+@media (max-width: 768px) {
+  .section_article--subtvideo iframe {
+    width: 90%;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 412px) {
+  .section_article--subtvideo iframe {
+    width: 90%;
+    margin-right: 20px;
+  }
+}
 
 .InfoContac {
   display: grid;
@@ -424,7 +448,7 @@ footer li {
     margin: 100px 5px 450px 5px;
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 375px) {
   .InfoContac {
     grid-template-columns: 0.5fr;
     margin: 100px 5px 450px 5px;
@@ -443,14 +467,14 @@ footer li {
   .InfoContac article {
     padding: 10px 2px;
     margin: 5px 2px;
-    width: 100%;
+    width: 95%;
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 375px) {
   .InfoContac article {
     padding: 10px;
     margin: 5px 2px;
-    width: 160%;
+    width: 140%;
   }
 }
 .InfoContac h1, .InfoContac .h1 {
@@ -469,7 +493,7 @@ footer li {
     width: 95%;
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 375px) {
   .InfoContac div {
     width: 100%;
   }
@@ -488,7 +512,7 @@ footer li {
     width: 70%;
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 375px) {
   .InfoContac input {
     width: 100%;
   }
@@ -508,7 +532,7 @@ footer li {
     margin-left: 50px;
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 375px) {
   .InfoContac textarea {
     width: 80%;
     height: 50%;
@@ -546,18 +570,31 @@ footer li {
   border-radius: 10px;
   font-family: roboto;
 }
+@media (max-width: 1024px) {
+  .PedalDiv {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 5px;
+  }
+}
 @media (max-width: 768px) {
   .PedalDiv {
     flex-direction: column;
     align-items: center;
-    margin: 80px 5px;
+    margin: 50px 5px;
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 375px) {
   .PedalDiv {
     flex-direction: column;
     align-items: center;
-    margin: 80px 5px;
+    margin: 50px 0px;
+  }
+  .PedalDiv section {
+    width: 100%;
+  }
+  .PedalDiv p {
+    font-size: 10px;
   }
 }
 .PedalDiv section {
@@ -565,6 +602,7 @@ footer li {
   padding: 10px 5px;
   margin: 10px 10px;
   border-radius: 10px;
+  justify-content: center;
 }
 .PedalDiv h3, .PedalDiv .h3 {
   text-align: center;
@@ -579,7 +617,7 @@ footer li {
 }
 .PedalDiv img {
   border-radius: 25px;
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 /*!
