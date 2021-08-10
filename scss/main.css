@@ -340,6 +340,11 @@ footer {
     flex-direction: column;
   }
 }
+@media (max-width: 375px) {
+  footer {
+    flex-direction: column;
+  }
+}
 footer a {
   text-decoration: none;
   color: rgba(225, 243, 67, 0.932);
